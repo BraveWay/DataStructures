@@ -1,5 +1,7 @@
 package com.braveway.sparsearry;
 
+import java.util.PriorityQueue;
+
 /**
  * 稀疏数组 用于解决解决二维数组中大量值相同的情况 稀疏数组共有三列，第一行的第一列显示二维数组有多少行，
  * 第一行的第二列显示有多少列，第一行的第三列显示二维数组有多少非0数值的个数
@@ -21,6 +23,7 @@ public class SparseArray {
 		array[3][5] = 39;
 		array[4][0] = 91;
 		array[2][5] = 28;
+		
 
 		System.out.println("原二维数组：");
 		for (int i = 0; i < array.length; i++) {
