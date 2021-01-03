@@ -31,7 +31,7 @@ public class ArrayQueueTest {
 				System.out.printf("取出的数据是%d\n", res);
 				break;
 			case 'p':
-				int res2 = queue.peek();
+				int res2 = queue.element();
 				System.out.printf("队列的头部元素是%d\n", res2);
 				break;
 			case 'e':
@@ -68,6 +68,7 @@ class ArrayQueue<E> implements Queue<E> {
 	}
 
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public E remove() {
 		if (this.isEmpty()) {
@@ -77,6 +78,7 @@ class ArrayQueue<E> implements Queue<E> {
 	}
 
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public E element() {
 		if (this.isEmpty()) {
