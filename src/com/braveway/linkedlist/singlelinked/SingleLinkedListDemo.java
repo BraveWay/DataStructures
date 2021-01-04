@@ -1,4 +1,4 @@
-package com.braveway.linkedlist;
+package com.braveway.linkedlist.singlelinked;
 
 public class SingleLinkedListDemo {
 
