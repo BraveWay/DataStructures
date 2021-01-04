@@ -25,4 +25,8 @@ public interface Queue<E> {
 	E element();
 
 	void show();
+	
+	boolean isEmpty();
+	
+	boolean isFull();
 }

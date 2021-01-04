@@ -87,10 +87,12 @@ class ArrayQueue<E> implements Queue<E> {
 		return (E) items[front+1];
 	}
 
+	@Override
 	public boolean isEmpty() {
 		return this.front == this.rear;
 	}
 
+	@Override
 	public boolean isFull() {
 		return this.rear == this.maxSize - 1;
 	}
