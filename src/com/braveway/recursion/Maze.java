@@ -55,6 +55,7 @@ public class Maze {
 		
 		maze[1][2] = 1;
 		maze[2][2] = 1;
+		maze[5][5] = 1;
 	}
 	
 	public static void print() {
