@@ -30,6 +30,7 @@ public class BubbleSort {
 	 * @param array
 	 */
 	public static void sort(int[] array) {
+		boolean flag =  false;
 		for (int i = 0; i < array.length; i++) {
 			int temp = 0;
 			for (int j = 0; j < array.length - 1 - i; j++) {
@@ -37,7 +38,13 @@ public class BubbleSort {
 					temp = array[j];
 					array[j] = array[j + 1];
 					array[j + 1] = temp;
+					flag = true; //发生了交换
 				}
+			}
+			if(!flag) { // 如果没有发生交换，提前结束循环
+				break;
+			}else {
+				flag = false;
 			}
 		}
 	}
@@ -46,9 +53,10 @@ public class BubbleSort {
 	 * 性能测试
 	 */
 	public static void test() {
-		int[] array = new int[80000];
+		int[] array = new int[80000000];
 		for (int i = 0; i < array.length; i++) {
-			array[i] = (int) (Math.random() * 100000000);
+//			array[i] = (int) (Math.random() * 100000000);
+			array[i] = i;
 		}
 		long start = System.currentTimeMillis();
 		sort(array);
