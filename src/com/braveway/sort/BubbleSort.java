@@ -53,15 +53,15 @@ public class BubbleSort {
 	 * 性能测试
 	 */
 	public static void test() {
-		int[] array = new int[80000000];
+		int[] array = new int[800000];
 		for (int i = 0; i < array.length; i++) {
-//			array[i] = (int) (Math.random() * 100000000);
-			array[i] = i;
+			array[i] = (int) (Math.random() * 8000000);
+//			array[i] = (int) (Math.random() * 100);
 		}
 		long start = System.currentTimeMillis();
 		sort(array);
 		long end = System.currentTimeMillis();
-		System.out.println("排序共花时间：" + (end - start) / 1000 + "秒");
+		System.out.println("排序共花时间：" + (end - start)+ "毫秒");
 	}
 
 	/** 推演过程开始 **/
