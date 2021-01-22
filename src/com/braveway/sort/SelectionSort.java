@@ -50,9 +50,9 @@ public class SelectionSort {
 	 * ĞÔÄÜ²âÊÔ
 	 */
 	public static void test() {
-		int[] array = new int[800000];
+		int[] array = new int[800000000];
 		for (int i = 0; i < array.length; i++) {
-			array[i] = (int) (Math.random() * 1000000);
+			array[i] = (int) (Math.random() * 1000000000);
 //			array[i] = i;
 		}
 		long start = System.currentTimeMillis();
