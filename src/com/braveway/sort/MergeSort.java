@@ -31,9 +31,9 @@ public class MergeSort {
 	 * ĞÔÄÜ²âÊÔ
 	 */
 	public static void test() {
-		int[] array = new int[8];
+		int[] array = new int[80000000];
 		for (int i = 0; i < array.length; i++) {
-			array[i] = (int) (Math.random() * 100);
+			array[i] = (int) (Math.random() * 100000000);
 		}
 		int[] tempArray = new int[array.length];
 		long start = System.currentTimeMillis();

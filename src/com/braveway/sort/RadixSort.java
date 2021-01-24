@@ -34,8 +34,8 @@ public class RadixSort {
 	}
 	
 	public static void sort(int[] array) {
-		int temp = 0;
-		for(int i=0;i<array.length;i++) {
+		int temp = array[0];
+		for(int i=1;i<array.length;i++) {
 			if(array[i] > temp ) {
 				temp = array[i]; 
 			}
