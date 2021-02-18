@@ -28,28 +28,42 @@ public class Graph {
 	 ArrayList<String> vertexList; //存储顶点集合 
 	 int[][] edges;  //存储图对应的邻结矩阵
 	 int numOfEdges; //表示边的数目
+	 boolean[] isVisited;
 	
 	 //构造器
 	public Graph(int n) {
 		edges = new int[n][n];
 		vertexList = new ArrayList<String>(n);
+		isVisited = new boolean[5];
+	}
+	
+	public void dfs() {
+		for(int i=0;i<vertexList.size();i++) {
+			int m = getFirstNeighbour(i);
+		}
 	}
 	
 	/**
-	 * 得到k结点的第一个邻接结点
+	 *  根据当前结点的下标获取第一个邻接结点的下标
 	 * @param k 结点k
 	 * @return
 	 */
 	public int getFirstNeighbour(int k) {
-		
+		return -1;
 	}
 	
-	public int getNextNeighbour() {
-		
+	/**
+	 *  根据当前节点的前一个邻接结点的下标获取下一个邻接节点的下标
+	 * @param v
+	 * @param w
+	 * @return
+	 */
+	public int getNextNeighbour(int v,int w) {
+		return -1;
 	}
 	
 	public int get() {
-		
+		return -1;
 	}
 	
 	//常用的方法
